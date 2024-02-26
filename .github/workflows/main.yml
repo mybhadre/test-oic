@@ -7,6 +7,7 @@ permissions: write-all
 jobs:
   create_repo:
     runs-on: ubuntu-latest
+    permissions: {}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v2
