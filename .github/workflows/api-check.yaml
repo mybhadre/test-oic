@@ -13,5 +13,5 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           curl --request GET \
-          --url "https://api.github.com//repos/mybhadre/test-oic" \
+          --url "https://api.github.com/repos/mybhadre/test-oic" \
           --header "Authorization: Bearer $GH_TOKEN"
