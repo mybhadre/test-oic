@@ -8,7 +8,7 @@ token = os.getenv('GH_TOKEN')
 g = Github(base_url="https://api.github.com/repos/mybhadre/", login_or_token='token')
 # Creating a new repository
 new_repo = "mybhadre/demo-oic"
-user = g.get_user()
+user = g.get_user('mybhadre')
 print(user)
 
 repo = user.create_repo(new_repo)
