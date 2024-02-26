@@ -1,3 +1,9 @@
+name: api-check
+
+on:
+  workflow_dispatch: {}
+permissions: write-all
+
 jobs:
   use_api:
     runs-on: ubuntu-latest
