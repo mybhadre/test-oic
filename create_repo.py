@@ -12,8 +12,8 @@ user = g.get_user()
 #repo1 = user.create_repo(new_repo)
 #print(f"Repository '{new_repo}' created successfully!")
 reponame = "mybhadre/test-oic"
-token = "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"
-GITHUB_API_URL = "https://api.github.com/mybhadre/repo"
+#token = "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"
+GITHUB_API_URL = "https://api.github.com/repos/mybhadre/test-oic"
 headers = {"Authorization": "token {}".format(token)}
 data = {"name": "{}".format(reponame)}
 print(headers)
