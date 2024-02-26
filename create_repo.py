@@ -9,6 +9,8 @@ g = Github(base_url="https://api.github.com/repos/mybhadre/", login_or_token='to
 # Creating a new repository
 new_repo = "mybhadre/demo-oic"
 user = g.get_user()
+print(user)
+
 repo = user.create_repo(new_repo)
 #print(f"Repository '{new_repo}' created successfully!")
 reponame = "mybhadre/test-oic"
