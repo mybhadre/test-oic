@@ -14,7 +14,7 @@ user = g.get_user()
 #login = user.login
 #print(user) # will print 'AuthenticatedUser(login=<username_of_logged_in_user>)'
 #print(login) 
-
+reponame = "mybhadre/test-oic"
 repo = user.create_repo(new_repo)
 #print(f"Repository '{new_repo}' created successfully!")
 reponame = "mybhadre/test-oic"
