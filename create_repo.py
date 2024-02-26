@@ -7,7 +7,7 @@ token = os.getenv('GH_TOKEN')
 #g = Github(token)
 #g = Github(base_url="https://api.github.com/api/v3", login_or_token='token')
 # Creating a new repository
-#new_repo = "mybhadre/demo-oic"
+new_repo = "mybhadre/demo-oic"
 g = Github("mybhadre", "My@github24")
 user = g.get_user()
 #print(user)
