@@ -5,7 +5,7 @@ import requests
 import json
 token = os.getenv('GH_TOKEN')
 #g = Github(token)
-g = Github(base_url="https://api.github.com/repos/mybhadre/test-oic", login_or_token=token)
+g = Github(base_url="https://api.github.com/repos/mybhadre/", login_or_token='token')
 # Creating a new repository
 new_repo = "mybhadre/demo-oic"
 user = g.get_user()
