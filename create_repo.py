@@ -19,7 +19,8 @@ reponame = "mybhadre/test-oic"
 #repo = user.create_repo(new_repo)
 #print(f"Repository '{new_repo}' created successfully!")
 reponame = "mybhadre/demo-oic"
-token = "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"
+#token = "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"
+token = os.getenv('GH_TOKEN')
 g = Github(token)
 user = g.get_user()
 print(user)
