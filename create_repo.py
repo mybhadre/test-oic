@@ -17,7 +17,7 @@ user = g.get_user()
 reponame = "mybhadre/test-oic"
 #repo = user.create_repo(new_repo)
 #print(f"Repository '{new_repo}' created successfully!")
-reponame = "mybhadre/test-oic"
+reponame = "mybhadre/demo-oic"
 token = "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"
 GITHUB_API_URL = "https://api.github.com/user/repos"
 headers = {"Authorization": "token {}".format(token)}
