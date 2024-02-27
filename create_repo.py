@@ -26,4 +26,4 @@ print(headers)
 print(data)
 
 r = requests.post(GITHUB_API_URL + 'user/repos', data=json.dumps(data), headers=headers)
-#print(r)
+print(r)
