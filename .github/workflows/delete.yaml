@@ -1,4 +1,4 @@
-name: Create Repository
+name: delete Repository
 
 on:
   workflow_dispatch: {}
