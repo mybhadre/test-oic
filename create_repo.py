@@ -26,11 +26,11 @@ username = 'mybhadre'
 
 login = requests.get('https://api.github.com/search/repositories?q=github+api', auth=(username,token))
 print(login)
-#GITHUB_API_URL = "https://api.github.com/"
-#headers = {"Authorization": "token {}".format(token)}
-#data = {"name": "{}".format(reponame)}
-#print(headers)
-#print(data)
+GITHUB_API_URL = "https://api.github.com/"
+headers = {"Authorization": "token {}".format(token)}
+data = {"name": "{}".format(reponame)}
+print(headers)
+print(data)
 
-#r = requests.post(GITHUB_API_URL + 'user/repos', data=json.dumps(data), auth=(user,token))
-#print(r)
+r = requests.post(GITHUB_API_URL + 'user/repos', data=json.dumps(data), auth=(user,token))
+print(r)
