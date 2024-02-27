@@ -10,7 +10,7 @@ import json
 new_repo = "mybhadre/demo-oic"
 #g = Github("mybhadre", "My@github24")
 
-user = g.get_user()
+#user = g.get_user()
 #print(user)
 #login = user.login
 #print(user) # will print 'AuthenticatedUser(login=<username_of_logged_in_user>)'
