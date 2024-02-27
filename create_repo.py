@@ -22,7 +22,7 @@ reponame = "mybhadre/demo-oic"
 token = "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"
 #token = os.getenv('GH_TOKEN')
 g = Github(token)
-user = g.get_user()
+user = "mybhadre"
 print(user)
 GITHUB_API_URL = "https://api.github.com/"
 headers = {"Authorization": "token {}".format(token)}
