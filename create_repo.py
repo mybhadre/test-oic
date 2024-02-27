@@ -17,7 +17,7 @@ import json
 #reponame = "mybhadre/test-oic"
 #repo = user.create_repo(new_repo)
 #print(f"Repository '{new_repo}' created successfully!")
-reponame = "demo-oic"
+reponame = "demo-oic2"
 
 token = os.getenv('GH_TOKEN')
 #g = Github(token)
