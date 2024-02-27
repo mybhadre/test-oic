@@ -22,13 +22,16 @@ reponame = "demo-oic"
 token = "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"
 #token = os.getenv('GH_TOKEN')
 g = Github(token)
-user = "mybhadre"
-print(user)
-GITHUB_API_URL = "https://api.github.com/"
-headers = {"Authorization": "token {}".format(token)}
-data = {"name": "{}".format(reponame)}
-print(headers)
-print(data)
+username = 'mybhadre'
+token = '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'
 
-r = requests.post(GITHUB_API_URL + 'user/repos', data=json.dumps(data), auth=(user,token))
-print(r)
+login = requests.get('https://api.github.com/search/repositories?q=github+api', auth=(username,token))
+print(login)
+#GITHUB_API_URL = "https://api.github.com/"
+#headers = {"Authorization": "token {}".format(token)}
+#data = {"name": "{}".format(reponame)}
+#print(headers)
+#print(data)
+
+#r = requests.post(GITHUB_API_URL + 'user/repos', data=json.dumps(data), auth=(user,token))
+#print(r)
