@@ -23,7 +23,7 @@ token = "github_pat_11ANPLPNY0kFQwdY4nxFPH_rhXgjdxFC8gfOR0svF0nuB4axtOGp2NYMAMa2
 g = Github(token)
 user = g.get_user()
 print(user)
-GITHUB_API_URL = "https://api.github.com/user/repos"
+GITHUB_API_URL = "https://api.github.com/"
 headers = {"Authorization": "token {}".format(token)}
 data = {"name": "{}".format(reponame)}
 print(headers)
