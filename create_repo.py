@@ -3,19 +3,19 @@ from github import Github
 import os
 import requests
 import json
-#token = os.getenv('GH_TOKEN')
-#g = Github(token)
+token = os.getenv('GH_TOKEN')
+g = Github(token)
 #g = Github(base_url="https://api.github.com/api/v3", login_or_token='token')
 # Creating a new repository
 #new_repo = "demo-oic"
 
-#user = g.get_user()
+user = g.get_user()
 #print(user)
 #login = user.login
 #print(user) # will print 'AuthenticatedUser(login=<username_of_logged_in_user>)'
 #print(login) 
-#reponame = "mybhadre/test-oic"
-#repo = user.create_repo(new_repo)
+new_repo = "test-oic3"
+repo = user.create_repo(new_repo)
 #print(f"Repository '{new_repo}' created successfully!")
 reponame = "demo-oic2"
 
