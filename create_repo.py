@@ -15,15 +15,15 @@ user = g.get_user()
 #print(user) # will print 'AuthenticatedUser(login=<username_of_logged_in_user>)'
 #print(login) 
 reponame = "mybhadre/test-oic"
-repo = user.create_repo(new_repo)
+#repo = user.create_repo(new_repo)
 #print(f"Repository '{new_repo}' created successfully!")
 reponame = "mybhadre/test-oic"
-#token = "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"
-#GITHUB_API_URL = "https://api.github.com/repos/mybhadre/test-oic"
-#headers = {"Authorization": "token {}".format(token)}
-#data = {"name": "{}".format(reponame)}
-#print(headers)
-#print(data)
+token = "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"
+GITHUB_API_URL = "https://api.github.com/user/repos"
+headers = {"Authorization": "token {}".format(token)}
+data = {"name": "{}".format(reponame)}
+print(headers)
+print(data)
 
-#r = requests.post(GITHUB_API_URL +"mybhadre" + "", data=json.dumps(data), headers=headers)
+r = requests.post(GITHUB_API_URL, data=json.dumps(data), headers=headers)
 #print(r)
